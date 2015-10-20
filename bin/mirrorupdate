@@ -1,0 +1,6 @@
+#!/bin/bash
+now=`date +%Y%m%d`
+mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist_backup_$now
+mv /etc/pacman.d/mirrorlist.pacnew /etc/pacman.d/mirrorlist
+reflector --verbose -l 200 -p http --sort rate --save /etc/pacman.d/mirrorlist
+
