@@ -1,0 +1,8 @@
+*
+!/bin
+!/bin/mirrorupdate
+!/bin/simpler
+!/bin/terminals.zsh
+!/bin/vf
+!/.gitignore.d
+!/.gitignore.d/bin
